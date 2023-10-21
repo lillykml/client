@@ -1,46 +1,29 @@
 import './App.css';
 import React, {useState, useEffect} from 'react'
-import User from './components/user'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Insights from './pages/Insights'
+import Journal from './pages/Journal'
+import Survey1 from './pages/Survey1'
+import Survey2 from './pages/Survey2'
 
 function App() {
 
-  const [data, setData] = useState([{}])
-  const [user, setUser] = useState([{}])
-
-  useEffect(() => {
-    fetch("/members")     //fetches the /members route
-    .then(
-      res => res.json()  //we put the data in json
-    ).then(
-      data => {
-        setData(data)       // we update our data variable from use State
-        console.log(data)
-      })
-  }, [])  // the brackets only run it once
-
-  useEffect(() => {
-    fetch("/user")     //fetches the /members route
-    .then(
-      res => res.json()  //we put the data in json
-    ).then(
-      user => {
-        setUser(user)      // we update our data variable from use State
-        console.log(user)
-      })
-  }, [])  // the brackets only run it once
-
   return (
     <div className="App">
-      <div>
-      {(typeof data.members === 'undefined') ? (
-        <p>Loading ...</p>
-      ) : (
-        data.members.map((member, i) => (
-          <p key={i}>{member}</p>
-        ))
-      )}
-      </div>
-      <User name={user.name}/>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path='/insights' element={<Insights/>} />
+          <Route path='/journal' element={<Journal/>} />
+          <Route path='/survey1' element={<Survey1/>} />
+          <Route path='/survey2' element={<Survey2/>} />
+        </Routes>
+      </BrowserRouter>
+
+
+
     </div>
   );
 }
