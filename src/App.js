@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState([{}])
 
   useEffect(() => {
-    fetch("/members")     //fetches the /members route
+    fetch("/auth")     //fetches the /members route
     .then(
       res => res.json()  //we put the data in json
     ).then(
@@ -18,11 +18,11 @@ function App() {
 
   return (
     <div className="App">
-      {(typeof data.members === 'undefined') ? (
+      {(typeof data.auth_url === 'undefined') ? (
         <p>Loading ...</p>
       ) : (
-        data.members.map((member, i) => (
-          <p key={i}>{member}</p>
+        data.auth_url.map((auth_url, i) => (
+          <p key={i}>{auth_url}</p>
         ))
       )}
 
