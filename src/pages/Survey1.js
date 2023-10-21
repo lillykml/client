@@ -3,13 +3,18 @@ import React, { useState } from 'react';
 import './survey1.css';
 
 // MoodButton Component
-const MoodButton = ({ mood, setMood }) => {
-    return (
-      <button className="moodButton" onClick={() => setMood(mood)}>
-        <img src={`./assets/${mood}.svg`} alt={mood} />
-      </button>
-    );
-  };
+const MoodButton = ({ mood, currentMood, setMood }) => {
+  const isSelected = mood === currentMood; // Check if the mood is currently selected
+
+  return (
+    <button 
+      className={`moodButton ${isSelected ? 'selected' : ''}`} 
+      onClick={() => setMood(mood)}
+    >
+      <img src={`../assets/${mood}.svg`} alt={mood} />
+    </button>
+  );
+};
   
   // CustomButton Component
   const CustomButton = ({ text, navigateTo }) => {
@@ -37,10 +42,10 @@ const Survey1 = () => {
             <div className="moodSurvey">
                 <h2>Hi Courtney, how are you feeling today?</h2>
                 <div className="moodOptions">
-                    <MoodButton mood="Happy" setMood={setMood} />
-                    <MoodButton mood="Sad" setMood={setMood} />
-                    <MoodButton mood="Angry" setMood={setMood} />
-                    <MoodButton mood="Average" setMood={setMood} />
+                    <MoodButton mood="Happy" currentMood={mood} setMood={setMood} />
+                    <MoodButton mood="Sad" currentMood={mood} setMood={setMood} />
+                    <MoodButton mood="Angry" currentMood={mood} setMood={setMood} />
+                    <MoodButton mood="Average" currentMood={mood} setMood={setMood} />
                 </div>
                 <div className="buttonOptions">
                     <CustomButton text="Skip" navigateTo={navigateToNextQuestion} />
