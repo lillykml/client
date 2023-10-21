@@ -6,7 +6,7 @@ import './survey1.css';
 const MoodButton = ({ mood, setMood }) => {
     return (
       <button className="moodButton" onClick={() => setMood(mood)}>
-        <img src={`path_to_assets/${mood}.svg`} alt={mood} />
+        <img src={`./assets/${mood}.svg`} alt={mood} />
       </button>
     );
   };
