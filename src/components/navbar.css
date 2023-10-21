@@ -16,3 +16,8 @@ transition: color 0.3s;
 .navbar a:hover {
 color: #007BFF; /* Blue color on hover, based on the "Home" text color from the image */
 }
+
+.navbar a.active {
+    color: #007BFF;  /* Blue color */
+    font-weight: bold;
+}

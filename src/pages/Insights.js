@@ -6,7 +6,7 @@ const Insights = () => {
         <div>
             <Header />
             <h2>Insights Page</h2>
-            <Navbar/>
+            <Navbar current="insights"/>
         </div>
     )
 }

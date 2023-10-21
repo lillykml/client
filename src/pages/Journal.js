@@ -6,7 +6,7 @@ const Journal = () => {
         <div>
             <Header />
             <h2>Journal Page</h2>
-            <Navbar/>
+            <Navbar current="journal"/>
         </div>
     )
 }
