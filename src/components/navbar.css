@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+text-decoration: none; 
+color: black; 
+margin: 0 20px; 
+font-size: 24px;
+transition: color 0.3s; 
+}
+
+.navbar a:hover {
+color: #007BFF; /* Blue color on hover, based on the "Home" text color from the image */
+}
