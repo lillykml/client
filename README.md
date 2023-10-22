@@ -1,3 +1,16 @@
+# Intro
+
+MindCoach: A holistic health coach that offers users a comprehensive view of their overall health and provides personalized recommendations to improve their well-being.
+
+Hackers: Will Fowler, Lilly Kaemmerling, Courtney Kreitzer, Nicklas Schneider
+
+
+Access our pitch deck: https://www.canva.com/design/DAFx7O8S4Jc/X6Jc0RxPjHGwOj_uftoVhw/edit?utm_content=DAFx7O8S4Jc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+Access our Figma prototype: https://www.figma.com/proto/7RGgzMlATgCe5v2AMJPtZQ/MindCoach?type=design&node-id=82-2586&t=CZMXqgx8pINfos01-0&scaling=scale-down&page-id=29%3A476&starting-point-node-id=29%3A696
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
