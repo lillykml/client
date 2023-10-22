@@ -35,8 +35,8 @@ const Home = () => {
                 <h3 class="subtitle text">Daily Summary</h3>
                 <div className="summary-section">
                     <div className="daily-summary">
-                        <p>Well-being score: <b>54%</b></p>
-                        <p>You seem: <b>STRESSED</b></p>
+                        <p>Well-being score: &nbsp;<b>54%</b></p>
+                        <p>You seem: &nbsp;<b>Stressed</b></p>
                         <button onClick={navigateToInsights}>Recommendations</button>
                     </div>
                     <div className="image-container">

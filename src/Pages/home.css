@@ -40,6 +40,8 @@
 }
 
 .image-container {
+    display: flex;
+    align-items: center;
     background-color: #f7f7f7;
     margin-left: 20px;
     flex: 1;
