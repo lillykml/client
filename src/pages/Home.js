@@ -69,7 +69,7 @@ const Home = () => {
                         </button>
                     </div>
                     <div className="graph-container">
-                        <img src={`../assets/graph.png`} alt="graph"/>
+                        <img class="image" src={`../assets/graph.png`} alt="graph"/>
                         <div>
                         {['General', 'Mood', 'Stress'].map(buttonText => (
                             <button
