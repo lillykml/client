@@ -16,8 +16,6 @@ const Survey2 = () => {
         <div>
             <h2>Survey Page 2</h2>
         </div>
-      </div>
-    </div>
   );
 };
 
