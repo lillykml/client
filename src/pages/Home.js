@@ -4,7 +4,6 @@ import React, { useState, useContext } from 'react';
 import MoodContext from '../MoodContext';
 import Dataview from '../components/Dataview';
 import './home.css';
-import './hometop.css';
 
 const Home = () => {
 
@@ -33,7 +32,6 @@ const Home = () => {
                         <img src={`../assets/${mood}.svg`} alt={mood || "default"} />
                     </div>
                 </div>
-                <h3 class="subtitle text">Daily Summary</h3>
                 <div className="summary-section">
                     <div className="daily-summary">
                         <p>Well-being score: &nbsp;<b>54%</b></p>
@@ -48,12 +46,13 @@ const Home = () => {
                     <button onClick={navigateToSurvey} class="newEntry">Make new entry</button>
                 </div>
                 <div className="brighten-day">
-                    <h2>Let’s brighten up your day 🔆</h2>
+                    <h2 class="text">Let’s brighten up your day 🔆</h2>
                     <button>Click</button>
                 </div>
+                <h3 class="subtitle text">Daily Summary</h3>
                 <Dataview/>
                 <div className="weekly-summary">
-                    <h2>Weekly Summary</h2>
+                <h3 class="subtitle text">Weekly Summary</h3>
                     <div className="tabs">
                         <button
                             style={activeTab === 'Mental' ? { backgroundColor: '#5FA7FF', color: 'white' } : {}}

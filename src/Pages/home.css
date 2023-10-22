@@ -1,3 +1,7 @@
+p, h1, h2, h3 button .text {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .main-screen-container {
     display: flex;
     flex-direction: column;
@@ -134,4 +138,22 @@ button{
 
 .entryOuter{
     margin-top: 20px;
+}
+
+.date {
+    color: #838D9A;
+    font-size: 14;
+    margin-bottom: 0;
+}
+
+.welcome {
+    font-size: 26;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 18;
+    padding-left: 0;
+    padding-bottom: 5px;
+    margin-top: 0;
 }
