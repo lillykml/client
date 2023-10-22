@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import './home.css';
-
+import './hometop.css';
 
 const Home = () => {
 
@@ -19,9 +19,10 @@ const Home = () => {
         <div>
             <div className="main-screen-container">
                 <div className="header">
-                    <p>October 21, 2023</p>
-                    <h1>Welcome, Courtney</h1>
+                    <p class="date text">October 21, 2023</p>
+                    <h1 class="welcome text">Welcome, Courtney</h1>
                 </div>
+                <h3 class="subtitle text">Daily Summary</h3>
                 <div className="summary-section">
                     <div className="daily-summary">
                         <p>Well-being score: 54%</p>
@@ -33,7 +34,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="brighten-day">
-                    <h2>Let’s brighten up your day</h2>
+                    <h2>Let’s brighten up your day 🔆</h2>
                     <button>Click</button>
                 </div>
                 <div className="data-section">
