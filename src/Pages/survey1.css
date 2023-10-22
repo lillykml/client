@@ -12,20 +12,19 @@
   }
   
   .moodButton {
-    margin: 10px;
     border: none;
     background: none;
     cursor: pointer;
   }
 
-  .moodButton.selected img {
-    border: 2px solid black; /* Choose the border color when selected */
+  .moodButton .selected img {
+    border: 2px solid #89CF3C; /* Choose the border color when selected */
 
 }
   
   .moodButton img {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
   }
   
   .customButton {
@@ -40,6 +39,10 @@
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
+  }
+
+  #test{
+    background-color: grey;
   }
   
   .customButton:hover {

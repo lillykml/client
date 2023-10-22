@@ -1,3 +1,5 @@
+import Header from '../components/Header';
+import { useNavigate } from 'react-router-dom'; // import useNavigate from react-router-dom
 import React, { useState } from 'react';
 import './survey1.css';
 
@@ -16,7 +18,7 @@ const MoodButton = ({ mood, currentMood, setMood }) => {
 };
   
   // CustomButton Component
-  const CustomButton = ({ text, navigateTo }) => {
+  const CustomButton = ({ text, navigateTo}) => {
     return (
       <button className="customButton" onClick={navigateTo}>
         {text}
@@ -26,14 +28,17 @@ const MoodButton = ({ mood, currentMood, setMood }) => {
 
 const Survey1 = () => {
 
-    const [mood, setMood] = useState(null);
-  
-    const navigateToNextQuestion = () => {
-      // Navigate to another question or main page based on the mood
-      if (mood) {
-        window.location.href = '/nextPage';
-      }
-    };
+  const navigate = useNavigate(); // useNavigate hook for navigation
+  const [mood, setMood] = useState(null);
+
+  const navigateToNextPage = () => {
+          navigate('/survey2'); // navigate to Survey2 component if mood is set
+  };
+
+  const closeSurvey = () => {
+      navigate('/home'); // navigate to Home component
+  };
+
 
     return(
         <div>
@@ -46,8 +51,8 @@ const Survey1 = () => {
                     <MoodButton mood="Average" currentMood={mood} setMood={setMood} />
                 </div>
                 <div className="buttonOptions">
-                    <CustomButton text="Skip" navigateTo={navigateToNextQuestion} />
-                    <CustomButton text="Next" navigateTo={navigateToNextQuestion} />
+                    <CustomButton text="Skip" navigateTo={closeSurvey} /> {/* Skip navigates to Home */}
+                    <CustomButton text="Next" navigateTo={navigateToNextPage} />
                 </div>
                 </div>
              </div>
