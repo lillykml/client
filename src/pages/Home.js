@@ -12,7 +12,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const navigateToInsights = () => {
-        navigate('/survey1');
+        navigate('/Insights');
     };
 
     return(
@@ -63,7 +63,7 @@ const Home = () => {
                     </div>
                     <div className="graph-container">
                         <img src={`../assets/graph.png`} alt="graph"/>
-                    
+                        <div>
                         {['General', 'Mood', 'Stress'].map(buttonText => (
                             <button
                                 key={buttonText}
@@ -73,6 +73,7 @@ const Home = () => {
                                 {buttonText}
                             </button>
                         ))}
+                        </div>
                     </div>
                 </div>
             </div>
