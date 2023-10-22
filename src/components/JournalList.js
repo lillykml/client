@@ -1,13 +1,7 @@
 import React from 'react';
 import JournalEntry from './JournalEntry';
 
-const JournalList = () => {
-    const entries = [
-        { date: "Oct 14, 2023", content: "Lorem ipsum dolor sit amet consectetur. Sit nulla massa est et ac dictum integer..." },
-        { date: "Sep 29, 2023", content: "Lorem ipsum dolor sit amet consectetur. Sit nulla massa est et ac dictum integer..." },
-        { date: "Sep 24, 2023", content: "Lorem ipsum dolor sit amet consectetur. Sit nulla massa est et ac dictum integer..." },
-    ];
-
+const JournalList = ({entries}) => {
     return (
         <div>
             {entries.map((entry, index) => (

@@ -1,0 +1,16 @@
+.journal-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 366px;
+    margin: 0 auto; /* Center the container if needed */
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
