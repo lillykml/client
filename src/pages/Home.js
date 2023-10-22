@@ -29,7 +29,7 @@ const Home = () => {
                         <button onClick={navigateToInsights}>Recommendations</button>
                     </div>
                     <div className="image-container">
-                        {/* Placeholder for Image */}
+                        <img src={`../assets/tree.png`} alt="tree"/>
                     </div>
                 </div>
                 <div className="brighten-day">
@@ -45,6 +45,7 @@ const Home = () => {
                     ))}
                 </div>
                 <div className="weekly-summary">
+                    <h2>Weekly Summary</h2>
                     <div className="tabs">
                         <button
                             style={activeTab === 'Mental' ? { backgroundColor: '#5FA7FF', color: 'white' } : {}}
@@ -60,7 +61,8 @@ const Home = () => {
                         </button>
                     </div>
                     <div className="graph-container">
-                        {/* Placeholder for graph */}
+                        <img src={`../assets/graph.png`} alt="graph"/>
+                    
                         {['General', 'Mood', 'Stress'].map(buttonText => (
                             <button
                                 key={buttonText}
