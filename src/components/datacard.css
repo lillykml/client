@@ -1,0 +1,23 @@
+.data-card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.data-card h3 {
+    margin: 0;
+    margin-bottom: 10px; /* Spacing below the title */
+    font-size: 20px; /* Adjust based on your preference */
+    color: #333; /* Dark gray text */
+}
+
+.data-card p {
+    margin: 0;
+    font-size: 20px; /* Larger font size for data */
+    color: #555; /* Gray text */
+}

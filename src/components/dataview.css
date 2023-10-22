@@ -1,0 +1,7 @@
+.data-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+    max-width: 600px; /* Adjust based on your preference */
+    border-radius: 10px;
+}

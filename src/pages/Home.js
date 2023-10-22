@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useContext } from 'react';
 import MoodContext from '../MoodContext';
+import Dataview from '../components/Dataview';
 import './home.css';
 import './hometop.css';
 
@@ -51,14 +52,7 @@ const Home = () => {
                     <button><a href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dqeDA1cnBzOGVodDkyenlwZnEwbXoyYjIwYWkzNmR3cm01Z3RpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2A75RyXVzzSI2bx4Gj/giphy.gif">
                         Click </a></button>
                 </div>
-                <div className="data-section">
-                    {['Steps', 'Heart rate', 'Stress', 'Mood'].map(header => (
-                        <div key={header} className="data-block">
-                            <h3>{header}</h3>
-                            <p>Placeholder</p>
-                        </div>
-                    ))}
-                </div>
+                <Dataview/>
                 <div className="weekly-summary">
                     <h2>Weekly Summary</h2>
                     <div className="tabs">
