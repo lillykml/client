@@ -6,6 +6,7 @@ import Insights from './pages/Insights'
 import Journal from './pages/Journal'
 import Survey1 from './pages/Survey1'
 import Survey2 from './pages/Survey2'
+import Old from './pages/Old'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/journal' element={<Journal/>} />
           <Route path='/survey1' element={<Survey1/>} />
           <Route path='/survey2' element={<Survey2/>} />
+          <Route path='/old' element={<Old/>}/>
         </Routes>
       </BrowserRouter>
     </div>
