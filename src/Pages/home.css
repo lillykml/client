@@ -124,3 +124,12 @@ button{
     padding: 8px;
     font-weight: bold;
 }
+
+.newEntry{
+    background-color: #89CF3C;
+    color: white;
+}
+
+.entryOuter{
+    margin-top: 20px;
+}

@@ -18,6 +18,10 @@ const Home = () => {
         navigate('/Insights');
     };
 
+    const navigateToSurvey = () => {
+        navigate('/Survey1');
+    };
+
     return(
         <div>
             <div className="main-screen-container">
@@ -38,6 +42,9 @@ const Home = () => {
                     <div className="image-container">
                         <img src={`../assets/tree.png`} alt="tree"/>
                     </div>
+                </div>
+                <div class="entryOuter">
+                    <button onClick={navigateToSurvey} class="newEntry">Make new entry</button>
                 </div>
                 <div className="brighten-day">
                     <h2>Let’s brighten up your day 🔆</h2>
