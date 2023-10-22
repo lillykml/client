@@ -48,7 +48,8 @@ const Home = () => {
                 </div>
                 <div className="brighten-day">
                     <h2>Let’s brighten up your day 🔆</h2>
-                    <button>Click</button>
+                    <button><a href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2dqeDA1cnBzOGVodDkyenlwZnEwbXoyYjIwYWkzNmR3cm01Z3RpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2A75RyXVzzSI2bx4Gj/giphy.gif">
+                        Click <a/></button>
                 </div>
                 <div className="data-section">
                     {['Steps', 'Heart rate', 'Stress', 'Mood'].map(header => (
