@@ -1,6 +1,6 @@
 # Intro
 
-MindCoach: A holistic health coach that offers users a comprehensive view of their overall health and provides personalized recommendations to improve their well-being.
+MindCoach: A holistic health coach that offers users a comprehensive view of their overall health and provides personalized recommendations to improve their well-being. Access our backend repo via https://github.com/lillykml/flask-server.
 
 Hackers: Will Fowler, Lilly Kaemmerling, Courtney Kreitzer, Nicklas Schneider
 

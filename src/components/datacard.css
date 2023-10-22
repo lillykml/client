@@ -18,6 +18,6 @@
 
 .data-card p {
     margin: 0;
-    font-size: 24px; /* Larger font size for data */
+    font-size: 20px; /* Larger font size for data */
     color: #555; /* Gray text */
 }
