@@ -4,10 +4,15 @@
     padding: 20px;
 }
 
+.main-screen-container p{
+    display: flex;
+    align-items: flex-start;
+}
+
 .header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items:center;
 }
 
 .header h1{
@@ -74,6 +79,10 @@
     align-items: flex-start;
 }
 
+.tabs button {
+    margin: 2px;
+}
+
 .graph-buttons {
     display: flex;
     justify-content: space-between;
@@ -114,4 +123,13 @@ button{
     border: none;
     padding: 8px;
     font-weight: bold;
+}
+
+.newEntry{
+    background-color: #89CF3C;
+    color: white;
+}
+
+.entryOuter{
+    margin-top: 20px;
 }

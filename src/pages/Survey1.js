@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'; // import useNavigate from react-router-dom
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './survey1.css';
+import MoodContext from '../MoodContext';
 
 // MoodButton Component
 const MoodButton = ({ mood, currentMood, setMood }) => {
@@ -28,7 +29,7 @@ const MoodButton = ({ mood, currentMood, setMood }) => {
 const Survey1 = () => {
 
   const navigate = useNavigate(); // useNavigate hook for navigation
-  const [mood, setMood] = useState(null);
+  const { mood, setMood } = useContext(MoodContext);
 
   const navigateToNextPage = () => {
           navigate('/survey2'); // navigate to Survey2 component if mood is set
