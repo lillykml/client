@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useContext } from 'react';
 import MoodContext from '../MoodContext';
+import Dataview from '../components/Dataview';
 import './home.css';
 import './hometop.css';
 
@@ -50,14 +51,7 @@ const Home = () => {
                     <h2>Let’s brighten up your day 🔆</h2>
                     <button>Click</button>
                 </div>
-                <div className="data-section">
-                    {['Steps', 'Heart rate', 'Stress', 'Mood'].map(header => (
-                        <div key={header} className="data-block">
-                            <h3>{header}</h3>
-                            <p>Placeholder</p>
-                        </div>
-                    ))}
-                </div>
+                <Dataview/>
                 <div className="weekly-summary">
                     <h2>Weekly Summary</h2>
                     <div className="tabs">
