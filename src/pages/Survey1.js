@@ -1,4 +1,3 @@
-import Header from '../components/Header';
 import React, { useState } from 'react';
 import './survey1.css';
 
@@ -38,7 +37,6 @@ const Survey1 = () => {
 
     return(
         <div>
-            <Header />
             <div className="moodSurvey">
                 <h2>Hi Courtney, how are you feeling today?</h2>
                 <div className="moodOptions">

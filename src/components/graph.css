@@ -1,0 +1,54 @@
+.graph-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F0F4F8; /* light blueish background color */
+  }
+  
+  .day-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%; /* equally space each day-container */
+  }
+  
+  .bar-container {
+    position: relative;
+    width: 60%;
+    height: 200px; /* adjust based on your requirements */
+    margin-bottom: 5px;
+  }
+  
+  .bar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #AEDFF7; /* light blue background for each bar */
+  }
+  
+  .bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007BFF; /* blue color for the filled portion */
+  }
+  
+  .label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .percentage {
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }

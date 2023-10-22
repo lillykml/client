@@ -21,9 +21,6 @@ function App() {
           <Route path='/survey2' element={<Survey2/>} />
         </Routes>
       </BrowserRouter>
-
-
-
     </div>
   );
 }
